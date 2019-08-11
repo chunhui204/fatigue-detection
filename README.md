@@ -31,5 +31,15 @@ KCF人脸追踪时间在40ms左右。
 
 3. 判断疲劳与注意力分散的指标。
 dlib特征点标注：
-![]("https://github.com/chunhui204/fatigue-detection/blob/master/a.PNG")
-![]("https://github.com/chunhui204/fatigue-detection/blob/master/b.PNG")
+
+![](https://github.com/chunhui204/fatigue-detection/blob/master/a.PNG)
+
+眼部，嘴部闭合状态：
+
+![](https://github.com/chunhui204/fatigue-detection/blob/master/b.PNG)
+
+（1）当EAR小于阈值时认为眼部闭合，计算5秒内眼睛闭和时间比例（PERCOLS指标）>=30%， 认为疲劳；眼睛连续闭合时间超过两秒，认为疲劳。
+（2）当MAR大于0.5认为嘴巴张大状态（打哈欠），计算5秒内打哈欠状态持续时间>=15%,这时如果眼睛闭和时间>=15%，认为疲劳。
+（3）根据鼻梁位置距离左右两侧脸颊距离关系得到人脸的偏转程度，以此来判断驾驶员的专心程度。
+（4）对眼部瞳孔位置追踪，结合（3）的侧脸程度判断专心状态。（尚未完全实现）
+
