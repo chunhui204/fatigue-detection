@@ -9,6 +9,9 @@ Main thread: showing frame by Qt.
 tensorflow c++(how to compile on linux https://blog.csdn.net/Android_chunhui/article/details/97579895)
 dlib , opencv, Qt5.9
 
+you must change library path in test1.pro file:
+
+
 video:
 https://youtu.be/rKe3EQg9AAk
 
