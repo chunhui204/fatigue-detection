@@ -1,0 +1,4 @@
+<RCC>
+    <qresource prefix="/images/open.png"/>
+    <qresource prefix="/images/calib.png"/>
+</RCC>
